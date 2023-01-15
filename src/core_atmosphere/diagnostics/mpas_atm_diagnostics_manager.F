@@ -57,7 +57,6 @@ module mpas_atm_diagnostics_manager
 !        call isobaric_diagnostics_setup(structs, clock)
 !        call convective_diagnostics_setup(structs, clock)
         call pv_diagnostics_setup(structs, clock)
-!        call pv_diagnostics_init_prev(structs)                              ! MC ADDED
 !        call soundings_setup(configs, structs, clock, dminfo)
 
     end subroutine mpas_atm_diag_setup
