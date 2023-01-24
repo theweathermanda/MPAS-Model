@@ -182,6 +182,8 @@
  tend_rho_physics(:,:) = 0._RKIND       ! NB: rho tendency is not currently supplied by physics, but this
                                         !     field may be later filled with IAU or other tendencies
 
+ tend_u_phys(:,:) = 0._RKIND            
+ 
  !
  ! In case some variables are not allocated due to their associated packages,
  ! we need to make their pointers associated here to avoid triggering run-time
